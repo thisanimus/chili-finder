@@ -142,6 +142,7 @@ async function getChilies() {
 	const response = await fetch(baseUrl + 'chilies.json');
 	return await response.json();
 }
+
 const listWrapper = document.querySelector('#chili-list');
 getChilies().then((chilies) => {
 	const options = {
