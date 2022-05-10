@@ -139,7 +139,7 @@ function generateRandomNumber(min, max) {
 }
 
 async function getChilies() {
-	const response = await fetch(baseUrl + 'chilies.json');
+	const response = await fetch('https://thisanimus.github.io/chili-list/assets/chilies.json');
 	return await response.json();
 }
 
@@ -163,7 +163,7 @@ getChilies().then((chilies) => {
 							</div>
 						</div>
 					</div>
-					<img src="./img/${item.image}" alt="${item.name}" loading="lazy" />
+					<img src="./assets/img/${item.image}" alt="${item.name}" loading="lazy" />
 				</header>
 				<hr>
 				<p class="description">${item.description}</div>
